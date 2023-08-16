@@ -1,4 +1,3 @@
-package Arrays;
 import java.util.*;
 
 public class Majority_Element_Problem {
