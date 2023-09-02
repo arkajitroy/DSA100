@@ -17,9 +17,10 @@ class Solution{
 
         if(tree1.val != tree2.val) return false;
 
-        return (
-            isSameTree(tree1.left, tree2.left) && isSameTree(tree1.right, tree2.right)
-        );
+        boolean leftSubtreeCheck = isSameTree(tree1.left, tree2.left);
+        boolean rightSubtreeCheck = isSameTree(tree1.right, tree2.right);
+
+        return leftSubtreeCheck && rightSubtreeCheck;
     }
 
     public static void main(String[] args) {
